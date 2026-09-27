@@ -1,0 +1,35 @@
+.layout {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.main {
+  min-height: 100vh;
+  margin-left: 240px;
+}
+
+.content {
+  padding: 32px;
+}
+
+.overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+
+  .content {
+    padding: 20px 16px;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.35);
+  }
+}
